@@ -107,14 +107,14 @@ const Hero = () => {
             >
               <SiLeetcode />
             </a> */}
-            {/* <a
+            <a
               href="https://codeforces.com/profile/Chaitanyasai_meka"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-circle hover:text-blue-400 transition"
             >
               <SiCodeforces />
-            </a> */}
+            </a>
           </div>
         </div>
       </div>
