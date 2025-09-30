@@ -98,7 +98,7 @@ useEffect(() => {
         <Loader onComplete={() => setShowLoader(false)} />
       ) : (
         <Router>
-          <div className="bg-white dark:bg-black">
+          <div className="bg-white dark:bg-black pt-20">
             <Navbar />
             <Routes>
               <Route path="/" element={<Hero />} />

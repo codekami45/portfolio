@@ -22,16 +22,16 @@ const Navbar = () => {
   ];
 
   return (
-    <nav id="nav-overall">
-      <div id="nav-div">
+    <nav
+      id="nav-overall"
+      className="fixed top-0 left-0 right-0 z-50 w-full bg-black/100 backdrop-blur-sm border-b border-neutral-800 flex items-center"
+    >
+      <div id="nav-div" className="mx-auto max-w-6xl px-4 py-4 flex items-center gap-6">
         {links.map(link => (
           <Link
             key={link.path}
             to={link.path}
-            className={`nav-a
-              md:inline
-              ${location.pathname === link.path ? 'hidden md:inline' : ''}
-            `}
+            className={`nav-a md:inline ${location.pathname === link.path ? 'hidden md:inline' : ''}`}
           >
             {link.label}
           </Link>
@@ -39,10 +39,10 @@ const Navbar = () => {
       </div>
 
       {/* Music toggle button */}
-      <div 
-        style={{ marginLeft: 'auto' }} 
+      <div
+        style={{ marginLeft: 'auto' }}
         onClick={toggleMusic}
-        className="relative hidden md:flex items-center justify-center"
+        className="relative hidden md:flex items-center justify-center mr-4"
       >
         <div 
           className={`w-10 h-10 rounded-full bg-black flex items-center justify-center cursor-pointer transition-all duration-300
